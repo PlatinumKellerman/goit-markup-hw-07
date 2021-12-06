@@ -40,8 +40,13 @@ body {
 }
 
 /* -----------------------------------HEADER----------------------------------- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
-  /* display: flex; */
+  display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -49,33 +54,16 @@ body {
   margin-right: auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .header-box {
   border-bottom: 1px solid var(--header-border);
 }
-.hdr {
-  margin: 0 auto;
-  display: flex;
-}
-.navigation-list .current {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent);
-  text-decoration: none;
-  transition: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--cubic);
-}
+
 .navigation {
   display: flex;
   align-items: center;
 }
-.logo-hdr,
+
+.navigation__logo,
 .logo-ftr {
   color: var(--accent);
   font-family: Raleway;
@@ -84,10 +72,38 @@ body {
   line-height: 1.2;
   text-decoration: none;
 }
-.logo-hdr {
+
+.navigation__logo {
   padding: 24px 0;
 }
-.navigation-link {
+
+.navigation__name {
+  color: var(--logo-text);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.navigation-list__item {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.navigation-list__item:last-child {
+  margin-right: 0px;
+}
+
+.navigation-list__link {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -103,14 +119,26 @@ body {
   position: relative;
 }
 
-.current:hover,
-.current:focus,
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation-list__link--current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+
+.navigation-list__link--current:hover,
+.navigation-list__link--current:focus,
+.navigation-list__link:hover,
+.navigation-list__link:focus {
   color: var(--accent);
 }
 
-.navigation-link.current::after {
+.navigation-list__link--current::after {
   content: '';
   width: 100%;
   height: 4px;
@@ -121,36 +149,24 @@ body {
   top: 96%;
 }
 
-.navigation-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin-left: 93px;
-}
-.navigation-list-items {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-.navigation-list .navigation-list-items + .navigation-list-items {
-  margin-left: 50px;
-}
-
 .contacts-list {
   list-style: none;
   display: flex;
   margin-left: auto;
   align-items: center;
 }
-.contacts-list-items {
+
+.contacts-list__items {
   display: flex;
   align-content: center;
+  margin-right: 50px;
 }
 
-.contacts-list .contacts-list-items + .contacts-list-items {
-  margin-left: 50px;
+.contacts-list__items:last-child {
+  margin-right: 0;
 }
-.contacts-link {
+
+.contacts-list__link {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -163,27 +179,21 @@ body {
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic);
 }
-.contacts-link:hover,
-.contacts-link:focus {
+
+.contacts-list__link:hover,
+.contacts-list__link:focus {
   color: var(--accent);
 }
 
-.icon-envelope {
+.contacts-list__envelope {
   margin-right: 10px;
   fill: currentColor;
   align-self: center;
 }
-.icon-smartphone {
+.contacts-list__smartphone {
   margin-right: 10px;
   align-self: center;
   fill: currentColor;
-}
-.logo-studio {
-  color: var(--logo-text);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 /* -----------------------------------BODY----------------------------------- */
@@ -1107,6 +1117,7 @@ body {
   margin-left: auto;
   cursor: pointer;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
