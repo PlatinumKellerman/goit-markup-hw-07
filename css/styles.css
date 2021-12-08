@@ -612,9 +612,8 @@ body {
 }
 
 .social-invite {
-  display: flex;
-  flex-direction: column;
-  margin-left: 70px;
+  display: block;
+  margin-left: auto;
 }
 
 .social-invite__title {
@@ -676,7 +675,9 @@ body {
 
 /* ----------------------------- FOOTER SIGNUP FORM ------------------*/
 .footer-signup {
-  margin-left: 93px;
+  display: block;
+  margin-left: auto;
+  /* margin-left: 93px; */
 }
 
 .footer-signup__title {
@@ -835,8 +836,8 @@ body {
   transition-timing-function: var(--cubic);
 }
 
-.projects-list__link:focus .overlay,
-.projects-list__link:hover .overlay {
+.projects-list__link:focus .projects-list__overlay,
+.projects-list__link:hover .projects-list__overlay {
   transform: translateY(0);
   opacity: 1;
 }
