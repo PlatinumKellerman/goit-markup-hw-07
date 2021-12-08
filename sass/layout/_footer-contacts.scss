@@ -2,7 +2,7 @@
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  color: var(--background);
+  color: $background;
 }
 
 .foot-container__list {
@@ -23,26 +23,26 @@
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  color: var(--background);
+  color: $background;
   transition-property: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--cubic);
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
   &:hover,
   &:focus,
   &:active {
-    color: var(--accent);
+    color: $accent;
   }
 }
 
 .foot-container__contacts-link {
   text-decoration: none;
-  color: var(--footer);
+  color: $footer;
   transition-property: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--cubic);
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
   &:hover,
   &:focus,
   &:active {
-    color: var(--accent);
+    color: $accent;
   }
 }

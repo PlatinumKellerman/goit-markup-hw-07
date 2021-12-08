@@ -28,7 +28,7 @@
   display: flex;
   width: 270px;
   height: 120px;
-  background-color: var(--section4-bckgnd);
+  background-color: $section4-bckgnd;
   margin-bottom: 30px;
   justify-content: center;
 }
@@ -48,5 +48,5 @@
 .feature-list__text {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--main-text);
+  color: $main-text;
 }

@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   font-weight: 700;
-  color: var(--background);
+  color: $background;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -41,16 +41,16 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
-  fill: var(--background);
-  color: var(--background);
+  fill: $background;
+  color: $background;
   border-radius: 50%;
   transition-property: background-color, fill, border-radius;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--cubic);
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
   &:hover,
   &:focus {
-    background-color: var(--accent);
-    fill: var(--background);
+    background-color: $accent;
+    fill: $background;
   }
 }
 
