@@ -1,0 +1,37 @@
+.foot {
+  background-color: var(--hero-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.basement--direction {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.foot-container {
+  display: flex;
+  flex-direction: column;
+  width: 231px;
+}
+
+.foot-container__logo {
+  margin-bottom: 20px;
+  justify-content: baseline;
+  color: var(--accent);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  padding: 24px 0;
+}
+
+.foot-container__logo-text {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--background);
+}
