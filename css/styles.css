@@ -675,11 +675,11 @@ body {
 }
 
 /* ----------------------------- FOOTER SIGNUP FORM ------------------*/
-.footer-signup-container {
+.footer-signup {
   margin-left: 93px;
 }
 
-.signup-form-title {
+.footer-signup__title {
   display: block;
   font-style: normal;
   font-size: 14px;
@@ -689,15 +689,11 @@ body {
   margin-bottom: 20px;
 }
 
-.signup-form {
+.footer-signup__form {
   display: flex;
 }
 
-.email-area-button {
-  display: flex;
-  align-items: flex-end;
-}
-.email-area {
+.footer-signup__email {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -709,7 +705,8 @@ body {
   padding-bottom: 15px;
   margin-right: 12px;
 }
-.signup-form-button {
+
+.footer-signup__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -730,10 +727,12 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.signup-form-button-text {
+
+.footer-signup__button-text {
   margin-right: 10px;
 }
-.icon-send {
+
+.footer-signup__icon {
   fill: var(--background);
 }
 
@@ -898,6 +897,13 @@ body {
   transition: opacity 350ms, visibility 350ms;
   pointer-events: visible;
 }
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 1;
+  pointer-events: none;
+}
+
 .backdrop.is-hidden .modal {
   transform: scale(0.01) translate(100%, 20%);
 }
@@ -917,7 +923,8 @@ body {
   transition-duration: 350ms;
   transform: scale(1) translate(-50%, -50%);
 }
-.modal-close {
+
+.modal__close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -934,20 +941,16 @@ body {
   transition-duration: 350ms;
   transition-timing-function: var(--cubic);
 }
-.modal-close:hover,
-.modal-close:focus {
+.modal__close-button:hover,
+.modal__close-button:focus {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal-close:hover .icon-close,
-.modal-close:focus .icon-close {
+.modal__close-button:hover .modal__icon-close,
+.modal__close-button:focus .modal__icon-close {
   fill: var(--accent);
 }
-.is-hidden {
-  visibility: hidden;
-  opacity: 1;
-  pointer-events: none;
-}
-.icon-close {
+
+.modal__icon-close {
   display: block;
   fill: var(--main-h2h3);
   transition-property: fill;
@@ -955,10 +958,11 @@ body {
   transition-timing-function: var(--cubic);
 }
 /*-------------------------------- MODAL FORM ------------------------*/
-.user-contacts-form {
+.modal__form {
   display: block;
 }
-.user-contacts-tittle {
+
+.modal__tittle {
   display: block;
   text-align: center;
   font-size: 20px;
@@ -968,7 +972,8 @@ body {
   pointer-events: none;
   user-select: none;
 }
-.user-contacts-labels {
+
+.modal__labels {
   position: relative;
   display: block;
   width: 100%;
@@ -979,17 +984,8 @@ body {
   margin-bottom: 10px;
   user-select: none;
 }
-.comment-label {
-  display: block;
-  font-size: 12px;
-  line-height: 1.16em;
-  letter-spacing: 0.01em;
-  color: var(--main-text);
-  margin-bottom: 20px;
-  user-select: none;
-}
 
-.label-name {
+.modal__label-name {
   display: block;
   font-size: 12px;
   line-height: 1.16em;
@@ -997,7 +993,8 @@ body {
   color: var(--main-text);
   margin-bottom: 4px;
 }
-.user-contacts-input {
+
+.modal__inputs {
   display: block;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1012,9 +1009,10 @@ body {
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic);
 }
-.user-icon,
-.phone-icon,
-.mail-icon {
+
+.modal__user-icon,
+.modal__phone-icon,
+.modal__mail-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -1024,32 +1022,43 @@ body {
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic);
 }
-.user-icon:hover,
-.phone-icon:hover,
-.mail-icon:hover {
+
+.modal__user-icon:hover,
+.modal__phone-icon:hover,
+.modal__mail-icon:hover {
   cursor: pointer;
   fill: var(--accent);
 }
 
-.user-contacts-input:focus,
-.user-contacts-input:hover {
+.modal__inputs:focus,
+.modal__inputs:hover {
   border-color: var(--accent);
   outline: 0;
 }
-.user-contacts-input:focus + .user-icon,
-.user-contacts-input:hover + .user-icon {
+.modal__inputs:focus + .modal__user-icon,
+.modal__inputs:hover + .modal__user-icon {
   fill: var(--accent);
 }
-.user-contacts-input:focus + .phone-icon,
-.user-contacts-input:hover + .phone-icon {
+.modal__inputs:focus + .modal__phone-icon,
+.modal__inputs:hover + .modal__phone-icon {
   fill: var(--accent);
 }
-.user-contacts-input:focus + .mail-icon,
-.user-contacts-input:hover + .mail-icon {
+.modal__inputs:focus + .modal__mail-icon,
+.modal__inputs:hover + .modal__mail-icon {
   fill: var(--accent);
 }
 
-.text-field {
+.modal__comment-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.01em;
+  color: var(--main-text);
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.modal__text-field {
   height: 120px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1061,20 +1070,22 @@ body {
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic);
 }
-.text-field::placeholder {
+
+.modal__text-field::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.text-field:hover,
-.text-field:focus {
+
+.modal__text-field:hover,
+.modal__text-field:focus {
   outline: 0;
   border-color: var(--accent);
 }
 
-.user-checkbox {
+.modal__checkbox {
   position: relative;
   display: block;
   margin-bottom: 30px;
@@ -1093,7 +1104,7 @@ body {
   text-decoration-skip-ink: none;
 }
 
-.chekbox-text {
+.modal__chekbox-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1102,11 +1113,13 @@ body {
   color: var(--main-text);
   padding-left: 5px;
 }
-.input-checkbox {
+
+.modal__input-checkbox {
   appearance: none;
   -webkit-appearance: none;
 }
-.icon-square {
+
+.modal__icon-square {
   display: block;
   position: absolute;
   top: 0;
@@ -1117,7 +1130,7 @@ body {
   transform: translateX(5px) translateY(4px);
 }
 
-.icon-check {
+.modal__icon-check {
   position: absolute;
   top: 0;
   left: 0;
@@ -1125,24 +1138,25 @@ body {
   fill: var(--background);
   cursor: pointer;
 }
-.input-checkbox:checked + .icon-square {
+
+.modal__input-checkbox:checked + .modal__icon-square {
   background-color: var(--accent);
   border-radius: 2px;
   fill: var(--accent);
 }
 
-.input-checkbox:checked + .icon-square + .icon-check {
+.modal__input-checkbox:checked + .modal__icon-square + .modal__icon-check {
   fill: var(--background);
 }
 
-.input-checkbox:focus + .icon-square {
+.modal__input-checkbox:focus + .modal__icon-square {
   fill: var(--accent);
 }
-.input-checkbox:hover + .icon-square {
+.modal__input-checkbox:hover + .modal__icon-square {
   fill: var(--accent);
 }
 
-.user-contacts-button {
+.modal__send-button {
   display: block;
   width: 200px;
   background: var(--accent);
