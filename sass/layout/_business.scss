@@ -20,15 +20,6 @@
   justify-content: center;
 }
 
-.container__business-item {
-  position: relative;
-  list-style: none;
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
 .container__business-img {
   max-width: 100%;
   display: block;
@@ -49,4 +40,13 @@
   letter-spacing: 0.03em;
   color: $background;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+}
+
+.container__business-item {
+  position: relative;
+  list-style: none;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
 }

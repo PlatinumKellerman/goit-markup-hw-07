@@ -1,7 +1,7 @@
 body {
-  background-color: var(--background);
-  font-family: 'Roboto', sans-serif;
+  background-color: $background;
+  font-family: '$fontRoboto', sans-serif;
   letter-spacing: 0.03em;
-  color: var(--main-h2h3);
+  color: $main-h2h3;
   box-sizing: border-box;
 }

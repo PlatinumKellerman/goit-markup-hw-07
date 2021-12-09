@@ -1,4 +1,4 @@
-.container-feature-title {
+.container__feature-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -15,13 +15,6 @@
   list-style: none;
   display: flex;
   justify-content: center;
-}
-
-.feature-list__item {
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0px;
-  }
 }
 
 .feature-list__container {
@@ -49,4 +42,11 @@
   font-size: 14px;
   line-height: 1.71;
   color: $main-text;
+}
+
+.feature-list__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }

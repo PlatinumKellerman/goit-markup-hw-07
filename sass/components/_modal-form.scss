@@ -34,6 +34,72 @@
   margin-bottom: 4px;
 }
 
+.modal__comment-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.01em;
+  color: $main-text;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.modal__checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  user-select: none;
+}
+
+.modal__checkbox-link {
+  font-family: $fontRoboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71em;
+  color: $accent;
+  padding-left: 5px;
+  text-decoration-skip-ink: none;
+}
+
+.modal__chekbox-text {
+  font-family: $fontRoboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71em;
+  color: $main-text;
+  padding-left: 5px;
+}
+
+.modal__input-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.modal__send-button {
+  display: block;
+  width: 200px;
+  background: $accent;
+  font-family: $fontRoboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  color: $background;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
 .modal__inputs {
   display: block;
   width: 100%;
@@ -86,16 +152,6 @@
   }
 }
 
-.modal__comment-label {
-  display: block;
-  font-size: 12px;
-  line-height: 1.16em;
-  letter-spacing: 0.01em;
-  color: $main-text;
-  margin-bottom: 20px;
-  user-select: none;
-}
-
 .modal__text-field {
   height: 120px;
   width: 100%;
@@ -119,40 +175,6 @@
     outline: 0;
     border-color: $accent;
   }
-}
-
-.modal__checkbox {
-  position: relative;
-  display: block;
-  margin-bottom: 30px;
-  text-align: center;
-  user-select: none;
-}
-
-.checkbox-link {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71em;
-  color: $accent;
-  padding-left: 5px;
-  text-decoration-skip-ink: none;
-}
-
-.modal__chekbox-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71em;
-  color: $main-text;
-  padding-left: 5px;
-}
-
-.modal__input-checkbox {
-  appearance: none;
-  -webkit-appearance: none;
 }
 
 .modal__icon-square {
@@ -187,28 +209,6 @@
   .modal__input-checkbox:checked + .modal__icon-square + & {
     fill: $background;
   }
-}
-
-.modal__send-button {
-  display: block;
-  width: 200px;
-  background: $accent;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875em;
-  letter-spacing: 0.06em;
-  color: $background;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  cursor: pointer;
 }
 
 input:-webkit-autofill,
