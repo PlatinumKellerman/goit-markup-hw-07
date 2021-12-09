@@ -278,10 +278,10 @@ ul {
 }
 
 body {
-  background-color: var(--background);
-  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  font-family: '$fontRoboto', sans-serif;
   letter-spacing: 0.03em;
-  color: var(--main-h2h3);
+  color: #212121;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -367,7 +367,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--main-h2h3);
+  color: #212121;
   padding-top: 32px;
   padding-bottom: 32px;
   -webkit-transition-property: color, background-color;
