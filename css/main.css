@@ -279,7 +279,7 @@ ul {
 
 body {
   background-color: #ffffff;
-  font-family: '$fontRoboto', sans-serif;
+  font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   color: #212121;
   -webkit-box-sizing: border-box;
@@ -506,6 +506,7 @@ body {
 }
 
 .container__hero-title {
+  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
